@@ -4,7 +4,7 @@ import Species.Dinosaur;
 
 import java.util.ArrayList;
 
-public abstract class Paddock  {
+public abstract class Paddock {
 
     private String name;
     PaddockType paddockType;
@@ -22,5 +22,14 @@ public abstract class Paddock  {
 
     public PaddockType getType() {
         return paddockType;
+    }
+
+    public int getCount() {
+        return dinosaurs.size();
+    }
+
+
+    public void AddDinosaur(Dinosaur dinosaur) {
+        this.dinosaurs.add(dinosaur);
     }
 }
