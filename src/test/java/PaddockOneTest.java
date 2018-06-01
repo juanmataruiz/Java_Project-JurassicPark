@@ -13,15 +13,14 @@ public class PaddockOneTest {
 
     PaddockOne paddockOne;
     private ArrayList<Dinosaur> dinosaurs;
-    Dinosaur ankylosaurus;
+    Dinosaur ankylosaurus, brachiosaurus;
 
     @Before
     public void setup() {
         paddockOne = new PaddockOne("Galliminus Valey", PaddockType.FREE_FROM_PREDATORS);
         this.dinosaurs = new ArrayList<Dinosaur>();
-        Dinosaur ankylosaurus = new Dinosaur(5, DinosaurType.HERBIVORE) {
-        };
-
+        Dinosaur ankylosaurus = new Dinosaur(5, DinosaurType.HERBIVORE) {};
+        Dinosaur brachiosaurus = new Dinosaur(7, DinosaurType.HERBIVORE) {};
     }
 
     @Test
@@ -42,7 +41,15 @@ public class PaddockOneTest {
 
     @Test
     public void paddockCanAddDinosaur() {
-        paddockOne.AddDinosaur(ankylosaurus);
+        paddockOne.addDinosaur(ankylosaurus);
+        assertEquals(1, paddockOne.getCount());
+    }
+
+    @Test
+    public void paddockCanRemoveDinosaur() {
+        paddockOne.addDinosaur(ankylosaurus);
+        paddockOne.addDinosaur(brachiosaurus);
+        paddockOne.removeDinosaur();
         assertEquals(1, paddockOne.getCount());
 
     }

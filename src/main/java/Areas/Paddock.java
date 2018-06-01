@@ -29,7 +29,11 @@ public abstract class Paddock {
     }
 
 
-    public void AddDinosaur(Dinosaur dinosaur) {
+    public void addDinosaur(Dinosaur dinosaur) {
         this.dinosaurs.add(dinosaur);
+    }
+
+    public void removeDinosaur() {
+        this.dinosaurs.remove(0);
     }
 }
