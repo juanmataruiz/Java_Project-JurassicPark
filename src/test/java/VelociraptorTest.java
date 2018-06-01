@@ -23,4 +23,10 @@ public class VelociraptorTest {
     public void dinosaurHasStomach() {
         assertEquals(3, velociraptor.getStomach());
     }
+
+    @Test
+    public void dinosaurCanBeFed() {
+        velociraptor.dinosaurIsFed();
+        assertEquals(4, velociraptor.getStomach());
+    }
 }

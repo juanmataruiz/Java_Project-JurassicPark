@@ -1,4 +1,4 @@
-import Area.Paddock;
+import Areas.Paddock;
 
 import java.util.ArrayList;
 
@@ -18,5 +18,9 @@ public class Park {
 
     public void addFood() {
         this.food ++;
+    }
+
+    public void removeFood() {
+        this.food --;
     }
 }

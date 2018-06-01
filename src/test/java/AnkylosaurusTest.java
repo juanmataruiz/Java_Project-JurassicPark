@@ -23,4 +23,10 @@ public class AnkylosaurusTest {
     public void dinosaurHasStomach() {
         assertEquals(1, ankylosaurus.getStomach());
     }
+
+    @Test
+    public void dinosaurCanBeFed() {
+        ankylosaurus.dinosaurIsFed();
+        assertEquals(2, ankylosaurus.getStomach());
+    }
 }

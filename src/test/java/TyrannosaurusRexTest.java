@@ -24,5 +24,11 @@ public class TyrannosaurusRexTest {
         assertEquals(5, tyrannosaurusRex.getStomach());
     }
 
+    @Test
+    public void dinosaurCanBeFed() {
+        tyrannosaurusRex.dinosaurIsFed();
+        assertEquals(6, tyrannosaurusRex.getStomach());
+    }
+
 
 }

@@ -24,4 +24,12 @@ public class ParkTest {
         assertEquals(22, park.getFood());
     }
 
+
+// THIS METHOD WILL ALLOW TO FEED DINOSAURS
+    @Test
+    public void parkCanRemoveFood() {
+        park.removeFood();
+        assertEquals(19, park.getFood());
+    }
+
 }

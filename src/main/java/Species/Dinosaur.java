@@ -18,4 +18,9 @@ public abstract class Dinosaur {
     public int getStomach() {
         return stomach;
     }
+
+    public void dinosaurIsFed() {
+        this.stomach ++;
+    }
+
 }
