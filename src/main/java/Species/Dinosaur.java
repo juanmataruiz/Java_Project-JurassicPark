@@ -20,7 +20,7 @@ public abstract class Dinosaur {
     }
 
     public void dinosaurIsFed() {
-        this.stomach ++;
+        this.stomach++;
     }
 
 }

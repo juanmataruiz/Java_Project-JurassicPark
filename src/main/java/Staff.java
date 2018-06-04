@@ -1,3 +1,5 @@
+import Species.Dinosaur;
+
 public class Staff {
     
     private String name;
@@ -5,10 +7,10 @@ public class Staff {
     private int food;
     private PositionType positionType;
     
-    public Staff(String name, int experience, int food, PositionType positionType) {
+    public Staff(String name, int experience, PositionType positionType) {
         this.name = name;
         this.experience = experience;
-        this.food = food;
+        this.food = 10;
         this.positionType = positionType;
     }
 
@@ -16,7 +18,7 @@ public class Staff {
         return this.name;
     }
 
-    public int getExperince() {
+    public int getExperience() {
         return this.experience;
     }
 
@@ -26,5 +28,18 @@ public class Staff {
 
     public PositionType getJobPosition() {
         return positionType;
+    }
+
+    public void addFood() {
+        this.food ++;
+    }
+
+    public void removeFood() {
+        this.food --;
+    }
+
+    public void feedDinosaur(Dinosaur dino1) {
+        this.removeFood();
+        dino1.dinosaurIsFed();
     }
 }
