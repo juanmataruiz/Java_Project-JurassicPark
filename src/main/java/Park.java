@@ -1,14 +1,18 @@
 import Areas.Paddock;
+import Species.Dinosaur;
+import Species.DinosaurType;
 
 import java.util.ArrayList;
 
 public class Park {
     
     private ArrayList<Paddock> paddocks;
+    private ArrayList<Dinosaur> dinosaurs;
     private int food;
 
     public Park(int food) {
         this.paddocks = new ArrayList<>();
+        this.dinosaurs = new ArrayList<>();
         this.food = food;
     }
 
@@ -35,4 +39,14 @@ public class Park {
     public void removePaddock() {
         this.paddocks.remove(0);
     }
+
+    public void transferOnlyHerbivoreDinosaur(Dinosaur dinosaur, Paddock origin, Paddock destination) {
+            if (dinosaur.getType() == DinosaurType.HERBIVORE) {
+                if (destination.herbivoreOnly()) {
+                    origin.removeDinosaur();
+                    destination.addDinosaur(dinosaur);
+                }
+            }
+        }
+
 }

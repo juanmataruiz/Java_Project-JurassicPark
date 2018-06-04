@@ -1,6 +1,7 @@
 package Areas;
 
 import Species.Dinosaur;
+import Species.DinosaurType;
 
 import java.util.ArrayList;
 
@@ -35,5 +36,13 @@ public abstract class Paddock {
 
     public void removeDinosaur() {
         this.dinosaurs.remove(0);
+    }
+
+    public boolean herbivoreOnly(){
+        for (Dinosaur dinosaur : this.dinosaurs) {
+            if (dinosaur.getType() == DinosaurType.HERBIVORE) {
+            }
+        }
+        return true;
     }
 }
