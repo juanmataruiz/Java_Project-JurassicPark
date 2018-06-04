@@ -8,24 +8,10 @@ public class Park {
     
     private ArrayList<Paddock> paddocks;
     private ArrayList<Dinosaur> dinosaurs;
-    private int food;
 
-    public Park(int food) {
+    public Park() {
         this.paddocks = new ArrayList<>();
         this.dinosaurs = new ArrayList<>();
-        this.food = food;
-    }
-
-    public int getFood() {
-        return food;
-    }
-
-    public void addFood() {
-        this.food ++;
-    }
-
-    public void removeFood() {
-        this.food --;
     }
 
     public int getCount() {
@@ -33,7 +19,7 @@ public class Park {
     }
 
     public void addPaddock(Paddock paddock) {
-        this.paddocks.add(0,paddock);
+        this.paddocks.add(0, paddock);
     }
 
     public void removePaddock() {

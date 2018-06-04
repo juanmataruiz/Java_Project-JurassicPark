@@ -19,7 +19,7 @@ public class ParkTest {
 
     @Before
     public void setup() {
-        park = new Park(20);
+        park = new Park();
 
         paddock1 = new PaddockOne("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
         paddock2 = new PaddockOne("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
@@ -30,25 +30,6 @@ public class ParkTest {
         dinosaur3 = new TyrannosaurusRex(5, DinosaurType.CARNIVORE);
     }
 
-    @Test
-    public void parkHasFood() {
-        assertEquals(20, park.getFood());
-    }
-
-    @Test
-    public void parkCanAddFood() {
-        park.addFood();
-        park.addFood();
-        assertEquals(22, park.getFood());
-    }
-
-
-// THIS METHOD WILL ALLOW TO FEED DINOSAURS
-    @Test
-    public void parkCanRemoveFood() {
-        park.removeFood();
-        assertEquals(19, park.getFood());
-    }
 
     @Test
     public void parkStartWithNoPaddock() {

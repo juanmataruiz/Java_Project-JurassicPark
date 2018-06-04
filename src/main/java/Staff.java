@@ -1,4 +1,6 @@
 import Species.Dinosaur;
+import Species.DinosaurType;
+import Species.TyrannosaurusRex;
 
 public class Staff {
     
@@ -39,7 +41,7 @@ public class Staff {
     }
 
     public void feedDinosaur(Dinosaur dino1) {
-        if (this.jobPositionType == JobPositionType.ZOOKEEPER) {
+        if (this.jobPositionType == JobPositionType.ZOOKEEPER && this.experience >= 7) {
             this.removeFood();
             dino1.dinosaurIsFed();
         }
