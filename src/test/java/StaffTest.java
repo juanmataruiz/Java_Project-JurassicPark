@@ -13,8 +13,8 @@ public class StaffTest {
 
     @Before
     public void setup() {
-        staff1 = new Staff("Hannah", 7, PositionType.BIOENGINEER);
-        staff2 = new Staff("Colin", 10, PositionType.ZOOKEEPER);
+        staff1 = new Staff("Hannah", 7, JobPositionType.BIOENGINEER);
+        staff2 = new Staff("Colin", 10, JobPositionType.ZOOKEEPER);
         dino1 = new Ankylosaurus(5, DinosaurType.HERBIVORE);
     }
 
@@ -30,7 +30,7 @@ public class StaffTest {
 
     @Test
     public void staffHasAJodPosition() {
-        assertEquals(PositionType.ZOOKEEPER, staff2.getJobPosition());
+        assertEquals(JobPositionType.ZOOKEEPER, staff2.getJobPosition());
     }
 
     @Test
@@ -51,11 +51,17 @@ public class StaffTest {
     }
 
     @Test
-    public void staffCanFeedDinosaur() {
-        staff1.feedDinosaur(dino1);
-        assertEquals(9, staff1.getFood());
+    public void staffCanFeedDinosaur__TRUE() {
+        staff2.feedDinosaur(dino1);
+        assertEquals(9, staff2.getFood());
         assertEquals(6, dino1.getStomach());
+    }
 
+    @Test
+    public void staffCanFeedDinosaur__FALSE() {
+        staff1.feedDinosaur(dino1);
+        assertEquals(10, staff1.getFood());
+        assertEquals(5, dino1.getStomach());
     }
 
 }

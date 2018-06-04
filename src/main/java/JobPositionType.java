@@ -1,4 +1,4 @@
-public enum PositionType {
+public enum JobPositionType {
 
     SECURITY_GUARD,
     BIOENGINEER,

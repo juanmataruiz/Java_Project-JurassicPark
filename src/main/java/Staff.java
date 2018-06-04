@@ -5,13 +5,13 @@ public class Staff {
     private String name;
     private int experience;
     private int food;
-    private PositionType positionType;
+    private JobPositionType jobPositionType;
     
-    public Staff(String name, int experience, PositionType positionType) {
+    public Staff(String name, int experience, JobPositionType jobPositionType) {
         this.name = name;
         this.experience = experience;
         this.food = 10;
-        this.positionType = positionType;
+        this.jobPositionType = jobPositionType;
     }
 
     public String getName() {
@@ -26,8 +26,8 @@ public class Staff {
         return food;
     }
 
-    public PositionType getJobPosition() {
-        return positionType;
+    public JobPositionType getJobPosition() {
+        return jobPositionType;
     }
 
     public void addFood() {
@@ -39,7 +39,10 @@ public class Staff {
     }
 
     public void feedDinosaur(Dinosaur dino1) {
-        this.removeFood();
-        dino1.dinosaurIsFed();
+        if (this.jobPositionType == JobPositionType.ZOOKEEPER) {
+            this.removeFood();
+            dino1.dinosaurIsFed();
+        }
     }
+
 }
