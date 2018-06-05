@@ -2,8 +2,7 @@ package Species;
 
 
 import Areas.Paddock;
-
-import java.util.Random;
+import ThemePark.Park;
 
 public abstract class Dinosaur {
 
@@ -41,11 +40,11 @@ public abstract class Dinosaur {
         return rampage;
     }
 
-    public void getHunt(Paddock paddock) {
+    public void getHunt(Paddock paddock, Park park) {
         if (this.rampage >= 6) {
             paddock.removeDinosaur();
+            park.removeVisitor();
             this.dinosaurIsFed();
-
         }
     }
 

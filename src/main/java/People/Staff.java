@@ -1,6 +1,5 @@
 package People;
 
-import People.JobPositionType;
 import Species.Dinosaur;
 
 public class Staff {

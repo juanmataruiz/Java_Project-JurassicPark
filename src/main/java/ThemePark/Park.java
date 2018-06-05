@@ -1,3 +1,5 @@
+package ThemePark;
+
 import Areas.Paddock;
 import People.Visitor;
 import Species.Dinosaur;
@@ -46,5 +48,7 @@ public class Park {
         this.visitors.add(0, visitor);
     }
 
-
+    public void removeVisitor() {
+        this.visitors.remove(0);
+    }
 }

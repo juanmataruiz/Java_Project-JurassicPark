@@ -5,6 +5,7 @@ import Species.Ankylosaurus;
 import Species.Dinosaur;
 import Species.DinosaurType;
 import Species.TyrannosaurusRex;
+import ThemePark.Park;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -98,6 +99,13 @@ public class ParkTest {
     public void parkCanAddVisitor() {
         park.addVisitor(visitor1);
         assertEquals(1, park.getVisitorCount());
+    }
+
+    @Test
+    public void parkCanRemoveVisitor() {
+        park.addVisitor(visitor2);
+        park.removeVisitor();
+        assertEquals(0, park.getVisitorCount());
     }
 
 
