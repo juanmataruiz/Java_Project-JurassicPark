@@ -23,9 +23,9 @@ public class ParkTest {
         paddock2 = new Paddock("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
         paddock3 = new Paddock("T-Rex Paddock", PaddockType.PREDATORS);
 
-        dinosaur1 = new Ankylosaurus(4, DinosaurType.HERBIVORE);
-        dinosaur2 = new Ankylosaurus(6, DinosaurType.HERBIVORE);
-        dinosaur3 = new TyrannosaurusRex(5, DinosaurType.CARNIVORE);
+        dinosaur1 = new Ankylosaurus(4, 2, DinosaurType.HERBIVORE);
+        dinosaur2 = new Ankylosaurus(6, 4, DinosaurType.HERBIVORE);
+        dinosaur3 = new TyrannosaurusRex(5, 7, DinosaurType.CARNIVORE);
     }
 
 

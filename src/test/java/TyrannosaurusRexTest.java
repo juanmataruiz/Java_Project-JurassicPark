@@ -11,7 +11,7 @@ public class TyrannosaurusRexTest {
 
     @Before
     public void setup() {
-        tyrannosaurusRex = new TyrannosaurusRex(5, DinosaurType.CARNIVORE);
+        tyrannosaurusRex = new TyrannosaurusRex(5, 4, DinosaurType.CARNIVORE);
     }
 
     @Test

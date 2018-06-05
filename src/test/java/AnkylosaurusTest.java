@@ -11,7 +11,7 @@ public class AnkylosaurusTest {
 
     @Before
     public void setup() {
-        ankylosaurus = new Ankylosaurus(1, DinosaurType.HERBIVORE);
+        ankylosaurus = new Ankylosaurus(1, 5, DinosaurType.HERBIVORE);
     }
 
     @Test

@@ -16,8 +16,8 @@ public class StaffTest {
     public void setup() {
         staff1 = new Staff("Hannah", 7, JobPositionType.BIOENGINEER);
         staff2 = new Staff("Colin", 10, JobPositionType.ZOOKEEPER);
-        dino1 = new Ankylosaurus(5, DinosaurType.HERBIVORE);
-        dino2 = new TyrannosaurusRex(5, DinosaurType.CARNIVORE);
+        dino1 = new Ankylosaurus(5, 3, DinosaurType.HERBIVORE);
+        dino2 = new TyrannosaurusRex(5,9, DinosaurType.CARNIVORE);
 
     }
 

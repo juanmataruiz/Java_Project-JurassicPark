@@ -19,8 +19,8 @@ public class PaddockTest {
     public void setup() {
         paddock = new Paddock("Galliminus Valey", PaddockType.FREE_FROM_PREDATORS);
         this.dinosaurs = new ArrayList<Dinosaur>();
-        Dinosaur ankylosaurus = new Dinosaur(5, DinosaurType.HERBIVORE) {};
-        Dinosaur brachiosaurus = new Dinosaur(7, DinosaurType.HERBIVORE) {};
+        Dinosaur ankylosaurus = new Dinosaur(5, 3, DinosaurType.HERBIVORE) {};
+        Dinosaur brachiosaurus = new Dinosaur(7,2, DinosaurType.HERBIVORE) {};
     }
 
     @Test

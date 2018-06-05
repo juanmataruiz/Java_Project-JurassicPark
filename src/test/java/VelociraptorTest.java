@@ -1,3 +1,5 @@
+import Areas.Paddock;
+import Areas.PaddockType;
 import Species.DinosaurType;
 import Species.Velociraptor;
 import org.junit.Before;
@@ -8,10 +10,12 @@ import static org.junit.Assert.assertEquals;
 public class VelociraptorTest {
 
     Velociraptor velociraptor;
+    Paddock paddock;
 
     @Before
     public void setup() {
-        velociraptor = new Velociraptor(3, DinosaurType.OMNIVORE);
+        velociraptor = new Velociraptor(3, 7, DinosaurType.OMNIVORE);
+        paddock = new Paddock("Velociraptor Paddock", PaddockType.PREDATORS);
     }
 
     @Test
@@ -31,15 +35,25 @@ public class VelociraptorTest {
     }
 
     @Test
-    public void canMockRampage_True() {
-        velociraptor.isMockRampaging_True();
-        assertEquals(4, velociraptor.getStomach());
+    public void dinosaurCanRampage() {
+        assertEquals(7, velociraptor.getRampage());
     }
 
     @Test
-    public void canMockRampage_False() {
-       velociraptor.isMockRampaging_False();
-       assertEquals(3, velociraptor.getStomach());
+    public void dinosaurCanHunt(){
+        paddock.addDinosaur(velociraptor);
+        velociraptor.getHunt(paddock);
+        assertEquals(0, paddock.getCount());
+        assertEquals(4, velociraptor.getStomach());
     }
+
+//    @Test
+//    public void dinosaurCannotHunt() {
+//        paddock.addDinosaur();
+//        velociraptor.getRampage();
+//        assertEquals(3, velociraptor.getStomach());
+//    }
+
+
 
 }
