@@ -1,6 +1,4 @@
 import Areas.Paddock;
-import Areas.PaddockOne;
-import Areas.PaddockTwo;
 import Areas.PaddockType;
 import Species.Ankylosaurus;
 import Species.Dinosaur;
@@ -21,9 +19,9 @@ public class ParkTest {
     public void setup() {
         park = new Park();
 
-        paddock1 = new PaddockOne("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
-        paddock2 = new PaddockOne("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
-        paddock3 = new PaddockTwo("T-Rex Paddock", PaddockType.PREDATORS);
+        paddock1 = new Paddock("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
+        paddock2 = new Paddock("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
+        paddock3 = new Paddock("T-Rex Paddock", PaddockType.PREDATORS);
 
         dinosaur1 = new Ankylosaurus(4, DinosaurType.HERBIVORE);
         dinosaur2 = new Ankylosaurus(6, DinosaurType.HERBIVORE);

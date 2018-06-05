@@ -1,4 +1,4 @@
-import Areas.PaddockOne;
+import Areas.Paddock;
 import Areas.PaddockType;
 import Species.Dinosaur;
 import Species.DinosaurType;
@@ -9,15 +9,15 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class PaddockOneTest {
+public class PaddockTest {
 
-    PaddockOne paddockOne;
+    Paddock paddock;
     private ArrayList<Dinosaur> dinosaurs;
     Dinosaur ankylosaurus, brachiosaurus;
 
     @Before
     public void setup() {
-        paddockOne = new PaddockOne("Galliminus Valey", PaddockType.FREE_FROM_PREDATORS);
+        paddock = new Paddock("Galliminus Valey", PaddockType.FREE_FROM_PREDATORS);
         this.dinosaurs = new ArrayList<Dinosaur>();
         Dinosaur ankylosaurus = new Dinosaur(5, DinosaurType.HERBIVORE) {};
         Dinosaur brachiosaurus = new Dinosaur(7, DinosaurType.HERBIVORE) {};
@@ -25,32 +25,31 @@ public class PaddockOneTest {
 
     @Test
     public void paddockHasName() {
-        assertEquals("Galliminus Valey", paddockOne.getName());
+        assertEquals("Galliminus Valey", paddock.getName());
     }
 
     @Test
     public void paddockHasType() {
-        assertEquals(PaddockType.FREE_FROM_PREDATORS, paddockOne.getType());
+        assertEquals(PaddockType.FREE_FROM_PREDATORS, paddock.getType());
     }
 
     @Test
     public void paddockStartEmpty() {
-        assertEquals(0, paddockOne.getCount());
-
+        assertEquals(0, paddock.getCount());
     }
 
     @Test
     public void paddockCanAddDinosaur() {
-        paddockOne.addDinosaur(ankylosaurus);
-        assertEquals(1, paddockOne.getCount());
+        paddock.addDinosaur(ankylosaurus);
+        assertEquals(1, paddock.getCount());
     }
 
     @Test
     public void paddockCanRemoveDinosaur() {
-        paddockOne.addDinosaur(ankylosaurus);
-        paddockOne.addDinosaur(brachiosaurus);
-        paddockOne.removeDinosaur();
-        assertEquals(1, paddockOne.getCount());
-
+        paddock.addDinosaur(ankylosaurus);
+        paddock.addDinosaur(brachiosaurus);
+        paddock.removeDinosaur();
+        assertEquals(1, paddock.getCount());
     }
+
 }

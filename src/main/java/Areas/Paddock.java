@@ -5,7 +5,7 @@ import Species.DinosaurType;
 
 import java.util.ArrayList;
 
-public abstract class Paddock {
+public class Paddock {
 
     private String name;
     PaddockType paddockType;
