@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb6f3cbc-7e36-46a9-8f8f-3b6fc62b2e25" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_9_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/JurassicPark_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/JurassicPark_test.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Species/Ankylosaurus.java" afterPath="$PROJECT_DIR$/src/main/java/Species/Ankylosaurus.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Species/Dinosaur.java" afterPath="$PROJECT_DIR$/src/main/java/Species/Dinosaur.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Species/TyrannosaurusRex.java" afterPath="$PROJECT_DIR$/src/main/java/Species/TyrannosaurusRex.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Species/Velociraptor.java" afterPath="$PROJECT_DIR$/src/main/java/Species/Velociraptor.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AnkylosaurusTest.java" afterPath="$PROJECT_DIR$/src/test/java/AnkylosaurusTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PaddockTest.java" afterPath="$PROJECT_DIR$/src/test/java/PaddockTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ParkTest.java" afterPath="$PROJECT_DIR$/src/test/java/ParkTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StaffTest.java" afterPath="$PROJECT_DIR$/src/test/java/StaffTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TyrannosaurusRexTest.java" afterPath="$PROJECT_DIR$/src/test/java/TyrannosaurusRexTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/VelociraptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/VelociraptorTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Dinosaur.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dinosaur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Species/Dinosaur.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
@@ -58,18 +41,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VelociraptorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VelociraptorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/VelociraptorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+            <state relative-caret-position="651">
+              <caret line="55" column="22" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
               <folding>
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -574,7 +557,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VelociraptorTest.dinosaurCanHunt">
+  <component name="RunManager" selected="JUnit.VelociraptorTest.dinosaurCannotHunt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -783,8 +766,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VelociraptorTest.dinosaurCanHunt" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VelociraptorTest.dinosaurCannotHunt" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VelociraptorTest.dinosaurCannotHunt" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VelociraptorTest.dinosaurCanHunt" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.VelociraptorTest.dinosaurCannotRampage" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.VelociraptorTest.dinosaurCanRampage" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.All in JurassicPark_test" />
@@ -811,17 +794,8 @@
     <history-entry file="All_in_JurassicPark_test - 2018.06.05 at 11h 12m 05s.xml">
       <configuration name="All in JurassicPark_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VelociraptorTest_canMockRampage - 2018.06.05 at 10h 53m 23s.xml">
-      <configuration name="VelociraptorTest.canMockRampage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VelociraptorTest_canMockRampage_False - 2018.06.05 at 10h 58m 57s.xml">
-      <configuration name="VelociraptorTest.canMockRampage_False" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VelociraptorTest_canMockRampage_True - 2018.06.05 at 11h 11m 57s.xml">
       <configuration name="VelociraptorTest.canMockRampage_True" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VelociraptorTest_dinosaurCanHunt - 2018.06.05 at 10h 45m 33s.xml">
-      <configuration name="VelociraptorTest.dinosaurCanHunt" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VelociraptorTest_dinosaurCanHunt - 2018.06.05 at 14h 12m 15s.xml">
       <configuration name="VelociraptorTest.dinosaurCanHunt" configurationId="JUnit" />
@@ -833,6 +807,15 @@
       <configuration name="VelociraptorTest.dinosaurCanRampage" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VelociraptorTest_dinosaurCannotHunt - 2018.06.05 at 14h 15m 09s.xml">
+      <configuration name="VelociraptorTest.dinosaurCannotHunt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VelociraptorTest_dinosaurCannotHunt - 2018.06.05 at 14h 36m 43s.xml">
+      <configuration name="VelociraptorTest.dinosaurCannotHunt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VelociraptorTest_dinosaurCannotHunt - 2018.06.05 at 14h 39m 07s.xml">
+      <configuration name="VelociraptorTest.dinosaurCannotHunt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VelociraptorTest_dinosaurCannotHunt - 2018.06.05 at 14h 39m 27s.xml">
       <configuration name="VelociraptorTest.dinosaurCannotHunt" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VelociraptorTest_dinosaurCannotRampage - 2018.06.05 at 14h 14m 25s.xml">
@@ -1123,21 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/VelociraptorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-          <folding>
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Species/Velociraptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1163,6 +1131,21 @@
             <element signature="e#575#576#0" expanded="true" />
             <element signature="e#790#791#0" expanded="true" />
             <element signature="e#820#821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VelociraptorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="55" column="22" lean-forward="false" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <folding>
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
           </folding>
         </state>
       </provider>
