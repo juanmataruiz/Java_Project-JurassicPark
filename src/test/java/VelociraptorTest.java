@@ -29,4 +29,17 @@ public class VelociraptorTest {
         velociraptor.dinosaurIsFed();
         assertEquals(4, velociraptor.getStomach());
     }
+
+    @Test
+    public void canMockRampage_True() {
+        velociraptor.isMockRampaging_True();
+        assertEquals(4, velociraptor.getStomach());
+    }
+
+    @Test
+    public void canMockRampage_False() {
+       velociraptor.isMockRampaging_False();
+       assertEquals(3, velociraptor.getStomach());
+    }
+
 }
