@@ -1,4 +1,5 @@
 import Areas.Paddock;
+import People.Visitor;
 import Species.Dinosaur;
 import Species.DinosaurType;
 
@@ -8,10 +9,12 @@ public class Park {
     
     private ArrayList<Paddock> paddocks;
     private ArrayList<Dinosaur> dinosaurs;
+    private ArrayList<Visitor> visitors;
 
     public Park() {
         this.paddocks = new ArrayList<>();
         this.dinosaurs = new ArrayList<>();
+        this.visitors = new ArrayList<>();
     }
 
     public int getCount() {
@@ -34,5 +37,14 @@ public class Park {
                 }
             }
         }
+
+    public int getVisitorCount() {
+        return visitors.size();
+    }
+
+    public void addVisitor(Visitor visitor) {
+        this.visitors.add(0, visitor);
+    }
+
 
 }

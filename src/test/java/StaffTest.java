@@ -1,3 +1,5 @@
+import People.JobPositionType;
+import People.Staff;
 import Species.Ankylosaurus;
 import Species.Dinosaur;
 import Species.DinosaurType;

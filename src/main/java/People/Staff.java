@@ -1,6 +1,7 @@
+package People;
+
+import People.JobPositionType;
 import Species.Dinosaur;
-import Species.DinosaurType;
-import Species.TyrannosaurusRex;
 
 public class Staff {
     

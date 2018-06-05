@@ -45,6 +45,7 @@ public abstract class Dinosaur {
         if (this.rampage >= 6) {
             paddock.removeDinosaur();
             this.dinosaurIsFed();
+
         }
     }
 

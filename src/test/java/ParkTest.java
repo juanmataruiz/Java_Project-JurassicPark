@@ -1,5 +1,6 @@
 import Areas.Paddock;
 import Areas.PaddockType;
+import People.Visitor;
 import Species.Ankylosaurus;
 import Species.Dinosaur;
 import Species.DinosaurType;
@@ -14,6 +15,7 @@ public class ParkTest {
     Park park;
     Paddock paddock1, paddock2, paddock3;
     Dinosaur dinosaur1, dinosaur2, dinosaur3;
+    Visitor visitor1, visitor2;
 
     @Before
     public void setup() {
@@ -26,6 +28,9 @@ public class ParkTest {
         dinosaur1 = new Ankylosaurus(4, 2, DinosaurType.HERBIVORE);
         dinosaur2 = new Ankylosaurus(6, 4, DinosaurType.HERBIVORE);
         dinosaur3 = new TyrannosaurusRex(5, 7, DinosaurType.CARNIVORE);
+
+        visitor1 = new Visitor("Alan Grant",6);
+        visitor2 = new Visitor("Ellie Sattler", 8);
     }
 
 
@@ -82,7 +87,17 @@ public class ParkTest {
         assertEquals(2, park.getCount());
         assertEquals(1,paddock1.getCount());
         assertEquals(1,paddock3.getCount());
+    }
 
+    @Test
+    public void parkStartWithNoVisitors() {
+        assertEquals(0, park.getVisitorCount());
+    }
+
+    @Test
+    public void parkCanAddVisitor() {
+        park.addVisitor(visitor1);
+        assertEquals(1, park.getVisitorCount());
     }
 
 
