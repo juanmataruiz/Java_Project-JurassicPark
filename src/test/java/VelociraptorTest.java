@@ -50,9 +50,9 @@ public class VelociraptorTest {
     @Test
     public void dinosaurCanRampage() {
         Velociraptor spyVelociraptor = Mockito.spy(velociraptor1);
-        Mockito.when(spyVelociraptor.getRampage()).thenReturn(7);
+        Mockito.when(spyVelociraptor.getRampage()).thenReturn(5);
 
-        assertEquals(7, spyVelociraptor.getRampage());
+        assertEquals(5, spyVelociraptor.getRampage());
     }
 
     @Test
@@ -62,7 +62,7 @@ public class VelociraptorTest {
 
         paddock.addDinosaur(spyVelociraptor);
         park.addVisitor(visitor1);
-        spyVelociraptor.getHunt(paddock, park);
+        spyVelociraptor.hunt(paddock, park);
         assertEquals(0, paddock.getCount());
         assertEquals(0,park.getVisitorCount());
         assertEquals(7, spyVelociraptor.getStomach());
@@ -75,7 +75,7 @@ public class VelociraptorTest {
 
         paddock.addDinosaur(spyVelociraptor);
         park.addVisitor(visitor2);
-        spyVelociraptor.getHunt(paddock, park);
+        spyVelociraptor.hunt(paddock, park);
         assertEquals(1,paddock.getCount());
         assertEquals(1,park.getVisitorCount());
         assertEquals(6, spyVelociraptor.getStomach());

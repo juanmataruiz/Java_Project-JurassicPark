@@ -10,7 +10,7 @@ import java.util.Random;
 public abstract class Specie {
 
     private int stomach;
-    private int rampage;
+    protected int rampage;
     private DinosaurType dinosaurType;
 
     public Specie(int stomach, int rampage, DinosaurType dinosaurType) {
@@ -39,13 +39,13 @@ public abstract class Specie {
     }
 
 
-    public void getHunt(Paddock paddock, Park park) {
-        if (getRampage() >= this.rampage ) {
-            paddock.removeDinosaur();
-            park.removeVisitor();
-            this.dinosaurIsFed();
-        }
-    }
+//    public void getHunt(Paddock paddock, Park park) {
+//        if (getRampage() >= this.rampage ) {
+//            paddock.removeDinosaur();
+//            park.removeVisitor();
+//            this.dinosaurIsFed();
+//        }
+//    }
 
 
 }
