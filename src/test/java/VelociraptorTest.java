@@ -2,20 +2,18 @@ import Areas.Paddock;
 import Areas.PaddockType;
 import People.Visitor;
 import Species.DinosaurType;
-import Species.FakeVelociraptor;
 import Species.Velociraptor;
 import ThemePark.Park;
 import org.junit.Before;
 import org.junit.Test;
 
 import org.mockito.*;
-import static org.mockito.Mockito.*;
 
 import static org.junit.Assert.assertEquals;
 
 public class VelociraptorTest {
 
-    Velociraptor velociraptor1, velociraptor2, spyVelociraptor;
+    Velociraptor velociraptor1, velociraptor2;
     Paddock paddock;
     Park park;
     Visitor visitor1, visitor2;
@@ -82,26 +80,5 @@ public class VelociraptorTest {
         assertEquals(1,park.getVisitorCount());
         assertEquals(6, spyVelociraptor.getStomach());
     }
-//
-//    @Test
-//    public void dinosaurCannotHuntFake() {
-//        paddock.addDinosaur(velociraptor2);
-//        park.addVisitor(visitor2);
-//        velociraptor2.getHunt(paddock, park);
-//        assertEquals(1,paddock.getCount());
-//        assertEquals(1,park.getVisitorCount());
-//        assertEquals(6, velociraptor2.getStomach());
-//    }
-
-//    @Test
-//    public void mockitoStubPractice() {
-//        spyVelociraptor = Mockito.spy(velociraptor1);
-//
-//        int rampageNumber = spyVelociraptor.getRampage();
-//
-//        assertEquals(rampageNumber, 0);
-//    }
-
-
 
 }
