@@ -4,6 +4,8 @@ package Species;
 import Areas.Paddock;
 import ThemePark.Park;
 
+import java.util.Random;
+
 public abstract class Dinosaur {
 
     private int stomach;
@@ -28,20 +30,16 @@ public abstract class Dinosaur {
         this.stomach++;
     }
 
-    // Method used for random rampage, no tested!
-
-//    public int getRampage() {
-//      Random rand = new Random();
-//      int n = rand.nextInt(10) + 1;
-//      return n;
-//    }
 
     public int getRampage() {
-        return rampage;
+      Random rand = new Random();
+      int n = rand.nextInt(10) + 1;
+      return n;
     }
 
+
     public void getHunt(Paddock paddock, Park park) {
-        if (this.rampage >= 6) {
+        if (getRampage() >= this.rampage ) {
             paddock.removeDinosaur();
             park.removeVisitor();
             this.dinosaurIsFed();
