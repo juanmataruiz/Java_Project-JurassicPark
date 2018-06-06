@@ -1,6 +1,8 @@
-package Species;
+package Dinosaur;
 
-public class Velociraptor extends Dinosaur {
+import Enum.DinosaurType;
+
+public class Velociraptor extends Specie {
 
     public Velociraptor(int stomach, int rampage, DinosaurType dinosaurType) {
         super(stomach, rampage, dinosaurType);

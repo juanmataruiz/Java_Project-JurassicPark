@@ -1,9 +1,9 @@
-import People.JobPositionType;
-import People.Staff;
-import Species.Ankylosaurus;
-import Species.Dinosaur;
-import Species.DinosaurType;
-import Species.TyrannosaurusRex;
+import Enum.JobPositionType;
+import Human.Staff;
+import Dinosaur.Ankylosaurus;
+import Dinosaur.Specie;
+import Enum.DinosaurType;
+import Dinosaur.TyrannosaurusRex;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class StaffTest {
 
     Staff staff1, staff2;
-    Dinosaur dino1, dino2;
+    Specie dino1, dino2;
 
     @Before
     public void setup() {

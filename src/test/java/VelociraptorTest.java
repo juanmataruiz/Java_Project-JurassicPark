@@ -1,8 +1,8 @@
 import Areas.Paddock;
-import Areas.PaddockType;
-import People.Visitor;
-import Species.DinosaurType;
-import Species.Velociraptor;
+import Enum.PaddockType;
+import Human.Visitor;
+import Enum.DinosaurType;
+import Dinosaur.Velociraptor;
 import ThemePark.Park;
 import org.junit.Before;
 import org.junit.Test;

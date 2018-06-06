@@ -1,7 +1,8 @@
 package Areas;
 
-import Species.Dinosaur;
-import Species.DinosaurType;
+import Dinosaur.Specie;
+import Enum.DinosaurType;
+import Enum.PaddockType;
 
 import java.util.ArrayList;
 
@@ -9,12 +10,12 @@ public class Paddock {
 
     private String name;
     PaddockType paddockType;
-    private ArrayList<Dinosaur> dinosaurs;
+    private ArrayList<Specie> species;
 
     public Paddock(String name, PaddockType paddockType) {
         this.name = name;
         this.paddockType = paddockType;
-        this.dinosaurs = new ArrayList<>();
+        this.species = new ArrayList<>();
     }
 
     public String getName() {
@@ -26,21 +27,21 @@ public class Paddock {
     }
 
     public int getCount() {
-        return dinosaurs.size();
+        return species.size();
     }
 
 
-    public void addDinosaur(Dinosaur dinosaur) {
-        this.dinosaurs.add(dinosaur);
+    public void addDinosaur(Specie specie) {
+        this.species.add(specie);
     }
 
     public void removeDinosaur() {
-        this.dinosaurs.remove(0);
+        this.species.remove(0);
     }
 
     public boolean herbivoreOnly(){
-        for (Dinosaur dinosaur : this.dinosaurs) {
-            if (dinosaur.getType() == DinosaurType.HERBIVORE) {
+        for (Specie specie : this.species) {
+            if (specie.getType() == DinosaurType.HERBIVORE) {
             }
         }
         return true;

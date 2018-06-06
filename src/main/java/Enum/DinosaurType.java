@@ -1,4 +1,4 @@
-package Species;
+package Enum;
 
 public enum DinosaurType {
 

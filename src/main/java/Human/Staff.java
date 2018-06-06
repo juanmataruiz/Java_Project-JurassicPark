@@ -1,6 +1,7 @@
-package People;
+package Human;
 
-import Species.Dinosaur;
+import Dinosaur.Specie;
+import Enum.JobPositionType;
 
 public class Staff {
     
@@ -40,7 +41,7 @@ public class Staff {
         this.food --;
     }
 
-    public void feedDinosaur(Dinosaur dino1) {
+    public void feedDinosaur(Specie dino1) {
         if (this.jobPositionType == JobPositionType.ZOOKEEPER && this.experience >= 7) {
             this.removeFood();
             dino1.dinosaurIsFed();

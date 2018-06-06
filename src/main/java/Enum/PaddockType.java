@@ -1,4 +1,4 @@
-package Areas;
+package Enum;
 
 public enum PaddockType {
 

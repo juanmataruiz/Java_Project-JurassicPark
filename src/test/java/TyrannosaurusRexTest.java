@@ -1,5 +1,5 @@
-import Species.DinosaurType;
-import Species.TyrannosaurusRex;
+import Enum.DinosaurType;
+import Dinosaur.TyrannosaurusRex;
 import org.junit.Before;
 import org.junit.Test;
 

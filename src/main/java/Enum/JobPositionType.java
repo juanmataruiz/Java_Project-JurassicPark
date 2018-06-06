@@ -1,4 +1,4 @@
-package People;
+package Enum;
 
 public enum JobPositionType {
 

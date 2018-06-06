@@ -1,18 +1,19 @@
-package Species;
+package Dinosaur;
 
 
 import Areas.Paddock;
 import ThemePark.Park;
+import Enum.DinosaurType;
 
 import java.util.Random;
 
-public abstract class Dinosaur {
+public abstract class Specie {
 
     private int stomach;
     private int rampage;
     private DinosaurType dinosaurType;
 
-    public Dinosaur(int stomach, int rampage, DinosaurType dinosaurType) {
+    public Specie(int stomach, int rampage, DinosaurType dinosaurType) {
         this.stomach = stomach;
         this.rampage = rampage;
         this.dinosaurType = dinosaurType;

@@ -1,7 +1,7 @@
 import Areas.Paddock;
-import Areas.PaddockType;
-import Species.Dinosaur;
-import Species.DinosaurType;
+import Enum.PaddockType;
+import Dinosaur.Specie;
+import Enum.DinosaurType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,15 +12,15 @@ import static org.junit.Assert.assertEquals;
 public class PaddockTest {
 
     Paddock paddock;
-    private ArrayList<Dinosaur> dinosaurs;
-    Dinosaur ankylosaurus, brachiosaurus;
+    private ArrayList<Specie> species;
+    Specie ankylosaurus, brachiosaurus;
 
     @Before
     public void setup() {
         paddock = new Paddock("Galliminus Valey", PaddockType.FREE_FROM_PREDATORS);
-        this.dinosaurs = new ArrayList<Dinosaur>();
-        Dinosaur ankylosaurus = new Dinosaur(5, 3, DinosaurType.HERBIVORE) {};
-        Dinosaur brachiosaurus = new Dinosaur(7,2, DinosaurType.HERBIVORE) {};
+        this.species = new ArrayList<Specie>();
+        Specie ankylosaurus = new Specie(5, 3, DinosaurType.HERBIVORE) {};
+        Specie brachiosaurus = new Specie(7,2, DinosaurType.HERBIVORE) {};
     }
 
     @Test

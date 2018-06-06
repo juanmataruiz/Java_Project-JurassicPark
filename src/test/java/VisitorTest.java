@@ -1,4 +1,4 @@
-import People.Visitor;
+import Human.Visitor;
 import org.junit.Before;
 import org.junit.Test;
 

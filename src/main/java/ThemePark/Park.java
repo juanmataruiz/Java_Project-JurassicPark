@@ -1,21 +1,21 @@
 package ThemePark;
 
 import Areas.Paddock;
-import People.Visitor;
-import Species.Dinosaur;
-import Species.DinosaurType;
+import Human.Visitor;
+import Dinosaur.Specie;
+import Enum.DinosaurType;
 
 import java.util.ArrayList;
 
 public class Park {
     
     private ArrayList<Paddock> paddocks;
-    private ArrayList<Dinosaur> dinosaurs;
+    private ArrayList<Specie> species;
     private ArrayList<Visitor> visitors;
 
     public Park() {
         this.paddocks = new ArrayList<>();
-        this.dinosaurs = new ArrayList<>();
+        this.species = new ArrayList<>();
         this.visitors = new ArrayList<>();
     }
 
@@ -31,11 +31,11 @@ public class Park {
         this.paddocks.remove(0);
     }
 
-    public void transferOnlyHerbivoreDinosaur(Dinosaur dinosaur, Paddock origin, Paddock destination) {
-            if (dinosaur.getType() == DinosaurType.HERBIVORE) {
+    public void transferOnlyHerbivoreDinosaur(Specie specie, Paddock origin, Paddock destination) {
+            if (specie.getType() == DinosaurType.HERBIVORE) {
                 if (destination.herbivoreOnly()) {
                     origin.removeDinosaur();
-                    destination.addDinosaur(dinosaur);
+                    destination.addDinosaur(specie);
                 }
             }
         }

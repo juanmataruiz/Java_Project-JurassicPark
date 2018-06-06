@@ -1,4 +1,4 @@
-package People;
+package Human;
 
 public class Visitor {
 

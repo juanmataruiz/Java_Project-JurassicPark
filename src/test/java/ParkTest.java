@@ -1,10 +1,10 @@
 import Areas.Paddock;
-import Areas.PaddockType;
-import People.Visitor;
-import Species.Ankylosaurus;
-import Species.Dinosaur;
-import Species.DinosaurType;
-import Species.TyrannosaurusRex;
+import Enum.PaddockType;
+import Human.Visitor;
+import Dinosaur.Ankylosaurus;
+import Dinosaur.Specie;
+import Enum.DinosaurType;
+import Dinosaur.TyrannosaurusRex;
 import ThemePark.Park;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +15,7 @@ public class ParkTest {
 
     Park park;
     Paddock paddock1, paddock2, paddock3;
-    Dinosaur dinosaur1, dinosaur2, dinosaur3;
+    Specie specie1, specie2, specie3;
     Visitor visitor1, visitor2;
 
     @Before
@@ -26,9 +26,9 @@ public class ParkTest {
         paddock2 = new Paddock("Galliminus Valley", PaddockType.FREE_FROM_PREDATORS);
         paddock3 = new Paddock("T-Rex Paddock", PaddockType.PREDATORS);
 
-        dinosaur1 = new Ankylosaurus(4, 2, DinosaurType.HERBIVORE);
-        dinosaur2 = new Ankylosaurus(6, 4, DinosaurType.HERBIVORE);
-        dinosaur3 = new TyrannosaurusRex(5, 7, DinosaurType.CARNIVORE);
+        specie1 = new Ankylosaurus(4, 2, DinosaurType.HERBIVORE);
+        specie2 = new Ankylosaurus(6, 4, DinosaurType.HERBIVORE);
+        specie3 = new TyrannosaurusRex(5, 7, DinosaurType.CARNIVORE);
 
         visitor1 = new Visitor("Alan Grant",6);
         visitor2 = new Visitor("Ellie Sattler", 8);
@@ -58,9 +58,9 @@ public class ParkTest {
     public void parkCanTransferDinosaurToAnotherPaddock() {
         park.addPaddock(paddock1);
         park.addPaddock(paddock2);
-        paddock1.addDinosaur(dinosaur1);
+        paddock1.addDinosaur(specie1);
         paddock1.removeDinosaur();
-        paddock2.addDinosaur(dinosaur1);
+        paddock2.addDinosaur(specie1);
         assertEquals(2, park.getCount());
         assertEquals(0, paddock1.getCount());
         assertEquals(1, paddock2.getCount());
@@ -70,9 +70,9 @@ public class ParkTest {
     public void canTransferOnlyHerbivoreDinosaur__TRUE() {
         park.addPaddock(paddock1);
         park.addPaddock(paddock2);
-        paddock1.addDinosaur(dinosaur1);
-        paddock2.addDinosaur(dinosaur2);
-        park.transferOnlyHerbivoreDinosaur(dinosaur1, paddock1, paddock2);
+        paddock1.addDinosaur(specie1);
+        paddock2.addDinosaur(specie2);
+        park.transferOnlyHerbivoreDinosaur(specie1, paddock1, paddock2);
         assertEquals(2, park.getCount());
         assertEquals(0, paddock1.getCount());
         assertEquals(2, paddock2.getCount());
@@ -82,9 +82,9 @@ public class ParkTest {
     public void canTransferOnlyHerbivoreDinosaur__FALSE() {
         park.addPaddock(paddock1);
         park.addPaddock(paddock3);
-        paddock1.addDinosaur(dinosaur1);
-        paddock3.addDinosaur(dinosaur3);
-        park.transferOnlyHerbivoreDinosaur(dinosaur3, paddock3, paddock1);
+        paddock1.addDinosaur(specie1);
+        paddock3.addDinosaur(specie3);
+        park.transferOnlyHerbivoreDinosaur(specie3, paddock3, paddock1);
         assertEquals(2, park.getCount());
         assertEquals(1,paddock1.getCount());
         assertEquals(1,paddock3.getCount());
